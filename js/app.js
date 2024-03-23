@@ -3949,8 +3949,19 @@
         }), 500);
         pageNine.removeAttribute("data-no-event");
         nineThx.style.opacity = "1";
-        nineThx.style.marginTop = "160px";
+        nineThx.style.marginTop = "130px";
         nineArrow.style.display = "block";
+    }));
+    document.getElementById("fiveSlideLast");
+    document.getElementById("pageFive");
+    var swiperContainer = document.querySelector(".five__slider");
+    var slides = swiperContainer.querySelectorAll(".swiper-slide");
+    swiperContainer.addEventListener("transitionend", (function() {
+        var lastSlide = slides[slides.length - 1];
+        if (lastSlide.classList.contains("swiper-slide-active")) {
+            var pageFive = document.getElementById("pageFive");
+            pageFive.removeAttribute("data-no-event");
+        }
     }));
     window["FLS"] = true;
     isWebp();

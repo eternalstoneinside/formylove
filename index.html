@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240323204720">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240323212846">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,7 +119,7 @@
 					</div>
 				</div>
 			</section>
-			<section data-fp-section class="page__section five">
+			<section data-no-event id="pageFive" data-fp-section class="page__section five">
 				<div class="five__container">
 					<span>тут свайпай вправо</span>
 					<div class="five__slider swiper">
@@ -158,7 +158,7 @@
 								подобається все, що зв'язане з тобою. 48. Ти мені вся подобаєшся. 49. Ти просто прекрасна. 50. Я
 								просто кохаю тебе.
 							</div>
-							<div class="five__slide swiper-slide swiper-slide-last">молодець, ти прочитала цей довгий текст,
+							<div id="fiveSlideLast" class="five__slide  swiper-slide swiper-slide-last">молодець, ти прочитала цей довгий текст,
 								можеш свайпати вниз.
 							</div>
 						</div>
@@ -246,7 +246,14 @@
 					</div>
 					<div class="eight__voice">
 						<p>нажми нижче, прослухай</p>
-						<audio controls src="img/voice.mp3"></audio>
+						<audio controls>
+							<source src="img/voice.mp3" type="audio/mpeg" />
+							<p>
+								Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+								<a href="img/voice.mp3">ссылка на аудио</a>
+							</p>
+						</audio>
+						<!-- <audio controls src="img/voice.mp3"></audio> -->
 					</div>
 					<div class="eight__footer">
 						<p>надіюсь тобі сподобались розочки.</p>
@@ -318,8 +325,8 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20240323204720"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js?_v=20240323204720"></script>
+	<script src="js/app.min.js?_v=20240323212846"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js?_v=20240323212846"></script>
 
 </body>
 
